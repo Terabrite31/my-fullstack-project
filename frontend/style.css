@@ -1,0 +1,56 @@
+body {
+    background-color: aquamarine;
+
+      display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p {
+  
+  color: black;
+  font-size: 40px;
+  font-family: aerial;
+  font-weight: 900;
+  position: fixed;
+  margin-bottom: 200px;
+  margin-left: -224px;
+  z-index: 3;
+
+
+}
+.circle {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(195, 195, 195);
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: -300px;
+  right: -300px;
+}
+
+.square {
+    background-color: rgb(163, 7, 7);
+    width: 400px;
+    height: 100px;
+
+
+    position: center;
+    z-index:2;
+}
+
+button {
+    z-index: 5;
+    background-color: rgb(255, 255, 255);
+    color:rgb(249, 0, 0);
+    width: 100px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 0px;
+    position: fixed;
+    font-weight: 999;
+
+    
+}
