@@ -88,4 +88,5 @@ body {
   z-index: 20;
   margin-bottom: -180px;
   width: 150px;
+  position: fixed;
 }
