@@ -28,8 +28,8 @@ p {
   border-radius: 50%;
 
   position: fixed;
-  bottom: -400px;
-  right: -600px;
+  margin-bottom: -400px;
+  margin-right: -750px;
 }
 
 .square {
@@ -58,4 +58,26 @@ button {
     border-radius: 20px;
     
     
+}
+
+.logo {
+     font-size: 20px;
+    position: fixed;
+    z-index: 50;
+    top: 0px;
+    left: 30px;
+    font-weight: 999;
+}
+
+.square2 {
+    width: 150px;
+    height: 40px;
+    position: fixed;
+    background-color: rgba(229, 229, 232, 0.973);
+    border-radius: 20px;
+    top: 10px;
+    left: 5px;
+    background-color: white;
+    z-index: 10;
+
 }
