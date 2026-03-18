@@ -24,7 +24,7 @@ p {
 .circle {
   width: 1000px;
   height: 1150px;
-  background-color: rgb(100, 96, 96);
+  background-color: rgb(14, 13, 13);
   border-radius: 50%;
 
   position: fixed;
