@@ -14,27 +14,29 @@ p {
   font-family: aerial;
   font-weight: 900;
   position: fixed;
-  margin-bottom: 200px;
-  margin-left: -224px;
+  margin-bottom: 150px;
+  margin-left: -10px;
   z-index: 3;
+  font-weight: 999;
 
 
 }
 .circle {
-  width: 600px;
-  height: 600px;
-  background-color: rgb(195, 195, 195);
+  width: 1000px;
+  height: 1150px;
+  background-color: rgb(100, 96, 96);
   border-radius: 50%;
 
   position: fixed;
-  bottom: -300px;
-  right: -300px;
+  bottom: -400px;
+  right: -600px;
 }
 
 .square {
-    background-color: rgb(163, 7, 7);
+    background-color: rgb(255, 255, 255);
     width: 400px;
-    height: 100px;
+    height: 200px;
+    border-radius: 10px;
 
 
     position: center;
@@ -43,14 +45,17 @@ p {
 
 button {
     z-index: 5;
-    background-color: rgb(255, 255, 255);
-    color:rgb(249, 0, 0);
+    background-color: rgb(9, 156, 24);
+    color:rgb(255, 255, 255);
     width: 100px;
     height: 50px;
-    margin-top: 0px;
+    margin-top: 80px;
     margin-left: 0px;
     position: fixed;
     font-weight: 999;
-
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    
     
 }
