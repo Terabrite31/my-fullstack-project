@@ -14,19 +14,34 @@
 
     
 
-    <p class="text">Signup</p>
+    <p class="text" id="wrong">Signup</p>
 
       <a href="/frontend/homepage.html">
     <p class="logo">KONICHIWA</p>
      <div class="square2"></div>
     </a>
 
-    <input type="email" class="email-input" placeholder="Email">
+    <input type="email" class="email-input" id="email" placeholder="Email">
 
-    <input type="password" class="password-input" placeholder="password">
+    <input type="password" class="password-input"id="password" placeholder="password">
     
-     <button class="btn" onclick="window.location.href='/frontend/new.html'">Sign Up</button>
+     <button class="btn" onclick="checkNumber">Sign Up</button>
 
+     <script>
+function checkNumber() {
+  const password = document.getElementById('password').value;
+   const email = document.getElementById('email').value;
 
+  fetch(`/api/login?password=${password}&email=${email}`)
+    .then(res => res.json())
+    .then(data => {
+     if (data.checker == "approved") {
+      window.location.href = "/frontend/new.html";
+    } else { 
+      document.getElementById('wrong').innerText = "wrong email or password";
+ }
+    });
+}
+</script>
     </body>
 </html>
