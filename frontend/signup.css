@@ -90,3 +90,10 @@ body {
   width: 150px;
   position: fixed;
 }
+
+.wrong {
+    position: fixed;
+    z-index: 50;
+    color: red;
+    margin-top: -140px;
+}
