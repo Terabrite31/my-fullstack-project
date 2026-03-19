@@ -17,5 +17,24 @@
     });
 </script>
 
+<input type="text" id="numInput" placeholder="Enter number">
+<button onclick="checkNumber()">Check</button>
+
+<script>
+function checkNumber() {
+  const value = document.getElementById('numInput').value;
+
+  fetch(`/api/check?number=${value}`)
+    .then(res => res.json())
+    .then(data => {
+      if (data.correct) {
+        document.body.style.backgroundColor = "green";
+      } else {
+        document.body.style.backgroundColor = "white";
+      }
+    });
+}
+</script>
+
 </body>
 </html>
