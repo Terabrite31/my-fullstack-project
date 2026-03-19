@@ -15,7 +15,7 @@
   fetch('/api/message')
     .then(res => res.json())
     .then(data => {
-      document.getElementById('thenumber').innerText = data.message;
+      document.getElementById('apiText').innerText = data.message;
     });
 </script>
 
@@ -23,7 +23,7 @@
   fetch('/api/check')
     .then(res => res.json())
     .then(data => {
-      document.getElementById('apiText').innerText = data.number;
+      document.getElementById('thenumber').innerText = data.number;
     });
 </script>
 
