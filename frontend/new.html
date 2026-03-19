@@ -9,16 +9,23 @@
 
 <p id="apiText">Waiting...</p>
 
+<p id="thenumber">  </p>
+
 <script>
   fetch('/api/message')
     .then(res => res.json())
     .then(data => {
-      document.getElementById('apiText').innerText = data.message;
+      document.getElementById('thenumber').innerText = data.message;
     });
 </script>
 
-<input type="text" id="numInput" placeholder="Enter number">
-<button onclick="checkNumber()">Check</button>
+<script>
+  fetch('/api/check')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('apiText').innerText = data.number;
+    });
+</script>
 
 <script>
 function checkNumber() {
@@ -27,14 +34,17 @@ function checkNumber() {
   fetch(`/api/check?number=${value}`)
     .then(res => res.json())
     .then(data => {
-      if (data.correct) {
-        document.body.style.backgroundColor = "green";
-      } else {
-        document.body.style.backgroundColor = "white";
-      }
+      document.getElementById('apiText').innerText = data.number;
     });
 }
 </script>
+
+
+
+<input type="text" id="numInput" placeholder="Enter number">
+<button onclick="checkNumber()">Check</button>
+
+
 
 </body>
 </html>
