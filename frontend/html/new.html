@@ -17,7 +17,7 @@
   fetch('/api/message')
     .then(res => res.json())
     .then(data => {
-      document.getElementById('apiText').innerText = data.message;
+      document.getElementById('message').innerText = data.message;
     });
 </script>
 <!-- current user name -->
