@@ -71,3 +71,27 @@ border-radius: 10px;
     left: 30px;
     font-weight: 999;
 }
+
+
+.square3 {
+    position: fixed;
+    width: 600px;
+    height: 900px;
+    background-color: aliceblue;
+    right: 100px;
+    border-radius: 40px;
+
+}
+
+#chat {
+    position: fixed;
+    font-size: 100px;
+    right: 280px;
+    top: 125px;
+}
+
+#chatvalue {
+    position: fixed;
+    font-size: 50px;
+    right: 380px;
+}

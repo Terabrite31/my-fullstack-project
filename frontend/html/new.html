@@ -10,11 +10,16 @@
      <div class="square2"></div>
 
 
-
+      <div class="square3"></div>
 
 
 
     <div class="square"></div>
+
+    <p id="chat">CHAT</p>
+      <p id="chatvalue"></p>
+
+    
 
  
                                          <!-- API FETCH -->
@@ -57,13 +62,13 @@
 function checkNumber() {
   const value = document.getElementById('numInput').value;
 
-  fetch(`/api/check?number=${value}`)
+  fetch(`/api/chat?input=${value}`)
     .then(res => res.json())
     .then(data => {
-      document.getElementById('apiText').innerText = data.number;
+      document.getElementById('chatvalue').innerText = data.message;
     });
 }
-const email = localStorage.getItem("email");
+
 </script>
 
 <!-- number uploader -->
