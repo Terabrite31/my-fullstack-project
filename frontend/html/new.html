@@ -43,13 +43,13 @@
 
 
 <!-- number display -->
-<h2 id="thenumber" style="font-size: 100px;">  </h2>
+<h2 id="message" style="font-size: 100px;">  </h2>
 
 <script>
   fetch('/api/check')
     .then(res => res.json())
     .then(data => {
-      document.getElementById('thenumber').innerText = data.number;
+      document.getElementById('message').innerText = data.number;
     });
 </script>
 <!-- number display -->

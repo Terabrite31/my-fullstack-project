@@ -25,7 +25,7 @@ position: fixed;
 }
 
 
-#apiText {
+#message {
     position: fixed;
     margin-top: -100px;
     font-size: 100px;
