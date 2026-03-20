@@ -21,7 +21,8 @@ position: fixed;
 #numInput {
     width: 130px;
     height: 25px;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
+    
 }
 
 
