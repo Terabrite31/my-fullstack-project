@@ -17,5 +17,5 @@ export default async function handler(req, res) {
     VALUES (${email}, ${password})
 `;
 
-  res.json({ message: "table ready" });
+  res.json({ checker: "approved" });
 }
