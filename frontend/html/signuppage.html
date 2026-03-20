@@ -19,7 +19,7 @@
     <p class="wrong" id="wrong"> </p>
 
 
-      <a href="/frontend/homepage.html">
+      <a href="/frontend/html/homepage.html">
     <p class="logo">KONICHIWA</p>
      <div class="square2"></div>
     </a>
@@ -40,7 +40,7 @@ function checkNumber() {
     .then(data => {
      if (data.checker == "approved") {
       localStorage.setItem("email", email);
-      window.location.href = "/frontend/new.html";
+      window.location.href = "/frontend/html/new.html";
     } else { 
       document.getElementById('wrong').innerText = "wrong email or password";
  }
