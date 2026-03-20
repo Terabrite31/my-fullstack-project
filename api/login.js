@@ -1,9 +1,14 @@
-export default function handler(req, res) {
-  const { email, password } = req.query;
+import { sql } from '../lib/db';
 
-  if (email === "test@gmail.com" && password === "1234") {
-    res.json({ checker: "approved" });
-  } else {
-    res.json({ checker: "denied" });
-  }
+export default async function handler(req, res) {
+
+  await sql`
+    CREATE TABLE IF NOT EXISTS users (
+      id SERIAL PRIMARY KEY,
+      email TEXT,
+      password TEXT
+    )
+  `;
+
+  res.json({ message: "table ready" });
 }

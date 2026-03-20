@@ -39,6 +39,7 @@ function checkNumber() {
     .then(res => res.json())
     .then(data => {
      if (data.checker == "approved") {
+      localStorage.setItem("email", email);
       window.location.href = "/frontend/new.html";
     } else { 
       document.getElementById('wrong').innerText = "wrong email or password";
