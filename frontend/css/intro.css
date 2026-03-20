@@ -33,7 +33,7 @@ p {
 }
 
 .square {
-    background-color: rgb(255, 255, 255);
+    background-color:rgba(229, 229, 232, 0.973);
     width: 400px;
     height: 200px;
     border-radius: 10px;
