@@ -13,19 +13,19 @@ background: linear-gradient(to bottom, rgb(204, 183, 183), rgb(47, 47, 47));
 
 .input-area {
   position: relative;
-  width: 650px;
-  height: 400px;
-  margin-left: -300px;
+  width: 450px;
+  height: 300px;
+  margin-left: 70px;
   margin-top: 120px;
   background-color: aliceblue;
   border-radius: 10px;
 }
 
 #numInput {
-  width: 250px;
+  width: 230px;
   height: 25px;
-  margin-top: 265px;
-  margin-left: 90px;
+  margin-top: 225px;
+  margin-left: 50px;
   font-size: 5px;
   position: absolute;
 
@@ -33,9 +33,9 @@ background: linear-gradient(to bottom, rgb(204, 183, 183), rgb(47, 47, 47));
 
 #button {
   height: 25px;
-  width: 150px;
-  margin-top: 265px;
-  margin-left: 400px;
+  width: 100px;
+  margin-top: 225px;
+  margin-left: 320px;
   background-color: rgb(188, 41, 41);
 
 }
@@ -44,8 +44,8 @@ background: linear-gradient(to bottom, rgb(204, 183, 183), rgb(47, 47, 47));
   height: 40px;
   width: 150px;
   background-color: rgba(255, 255, 17, 0.926);
-  left: 35px;
-  top: 35px;
+  left: 15px;
+  top: 15px;
   position: absolute;
   border-radius: 10px;
   
@@ -59,29 +59,29 @@ background: linear-gradient(to bottom, rgb(204, 183, 183), rgb(47, 47, 47));
 
 #square {
   position: relative;
-  top: 0px;
-  right: -700px;
+  top: -10px;
+  right: -170px;
   background-color: aliceblue;
-  width: 900px;
-  height: 1300px;
+  width: 550px;
+  height: 700px;
   border-radius: 30px;
 }
 
 #chat {
-  font-size: 100px;
+  font-size: 70px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  left: 320px;
+  left: 200px;
   top: -50px;
   position: absolute;
 }
 
 #chatvalue {
   border-style: solid;
-  width: 635px;
-  height: 960px;
+  width: 435px;
+  height: 560px;
   background-color: rgb(255, 255, 255);
-  right: 200px;
-  top: 300px;
+  right: 54px;
+  top: 50px;
   font-size: 50px;
   position: absolute;
 }
