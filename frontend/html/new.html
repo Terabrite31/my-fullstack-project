@@ -64,6 +64,20 @@
 <p id="chatvalue"></p>
 
 <script>
+  fetch('/api/message')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('chatvalue').innerText = data.message;
+    });
+</script>
+
+<!-- number uploader -->
+
+
+
+<!-- number uploader -->
+
+<script>
 function checkNumber() {
   const value = document.getElementById('numInput').value;
 
