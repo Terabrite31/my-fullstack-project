@@ -51,14 +51,14 @@
 
 <!-- number uploader -->
 
-
-
 <script>
-  fetch('/api/showchat')
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById('chatvalue').innerText = data.message;
-    });
+  let interval = setInterval(() => {
+    fetch('/api/showchat')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('chatvalue').innerText = data.message;
+      });
+  }, 2000);
 </script>
 
 <!-- number uploader -->
