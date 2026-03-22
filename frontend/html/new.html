@@ -6,22 +6,24 @@
 </head>
 <body>
 
-   <p class="logo">KONICHIWA</p>
-     <div class="square2"></div>
+
+  <div class="logosquare">
+    <p class="logo">KONICHIWA</p>
+    </div>
 
 
       <div class="input-area">
-  <input type="text" id="numInput" placeholder="Type">
+  <input type="text" id="numInput">
   <button onclick="checkNumber()" id="button">Post</button>
 </div>
 
 
 
-    <div class="square"></div>
+    <div id="square">
 
     <p id="chat">CHAT</p>
       
-
+</div>
     
 
  
@@ -59,6 +61,7 @@
 
 <!-- number uploader -->
 
+<p id="chatvalue"></p>
 
 <script>
 function checkNumber() {
