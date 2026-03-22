@@ -7,6 +7,10 @@ body {
   height: 100vh;
 }
 
+.icon {
+  border-radius: 30px; /* or 50% for circle */
+}
+
 p {
   
   color: black;

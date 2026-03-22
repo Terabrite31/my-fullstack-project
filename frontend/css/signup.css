@@ -7,6 +7,9 @@ body {
   margin: 0;
 }
 
+.icon {
+  border-radius: 30px; /* or 50% for circle */
+}
 
 .square {
     width: 300px;
