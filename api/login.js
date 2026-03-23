@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   const {email, password} = req.query;
 
   const result = await sql`
-  SELECT password FROM users WHERE email = $(email)
+  SELECT password FROM users WHERE email = ${email}
   `;
 
   if (result.length === 0) {
