@@ -34,7 +34,31 @@
 
     <input type="password" class="password-input"id="password" placeholder="password">
     
-     <button class="btn" onclick="checkNumber()">Login</button>
+     <button class="button" onclick="checkNumber()">Login</button>
+
+
+
+
+
+
+
+          <script>
+function checkNumber() {
+  const password = document.getElementById('password').value;
+   const email = document.getElementById('email').value;
+
+  fetch(`/api/login?password=${password}&email=${email}`)
+    .then(res => res.json())
+    .then(data => {
+     if (data.checker == "approved") {
+      localStorage.setItem("email", email);
+      window.location.href = "/frontend/html/new.html";
+    } else { 
+      document.getElementById('wrong').innerText = "wrong email or password";
+ }
+    });
+}
+</script>
 
 
     </body>
