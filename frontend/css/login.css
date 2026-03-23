@@ -111,7 +111,7 @@ body {
   position: fixed;
 }
 
-.wrong {
+#wrong {
     position: fixed;
     z-index: 50;
     color: red;
