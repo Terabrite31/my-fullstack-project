@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
   const result = await sql`
   SELECT password FROM users WHERE email = $(email)
-  ';
+  `;
 
   if (result.length === 0) {
   return res.json({ checker: "no user" });
@@ -20,8 +20,6 @@ else {
 }
 
 }
-
-
 
 
 
